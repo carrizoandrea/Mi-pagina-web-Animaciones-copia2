@@ -442,7 +442,7 @@ h1{
 /* pagina Registrate.html*/
 
 .bodyResgistro{
-    background-color: #fceae9;
+    background-color: #f5ebeb;
 }
 
 .headerRegistro{
@@ -468,7 +468,6 @@ h1{
 }
 
 .mainRegistro{
-   
     width: 100%;
     height: 380px;
     display: flex;
@@ -483,7 +482,6 @@ h1{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
 }
 
 .mainRegistro div form div{
@@ -708,26 +706,16 @@ h1{
 
 @media(max-width:770px){
 
-    .mainRegistro{
+    .mainRegistro div .form{
         width: 100%;
-        height: 400px;
-    }
-
-    .form{
+        height: 800px;
         display: flex;
-        flex-direction: column;
-        margin: 30px 20px;
-    }
-
-    .form div{
-        display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-}
 
-
+    
 
 
 @media(max-width:580px){
