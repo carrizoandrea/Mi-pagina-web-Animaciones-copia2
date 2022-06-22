@@ -243,7 +243,7 @@ h1{
 
 
 .bodyBlog{
-    background-image: url(../img/1-min.png);
+    background-image: url(../img/2-min.png);
     display: grid;
     grid-template-columns: 1fr  1fr;
     grid-template-rows: 80px  300px  500px  80px;
@@ -490,7 +490,7 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 /* pagina Registrate.html*/
 
 .bodyResgistro{
-    background-image: url(../img/2-min.png);
+    background-image: url(../img/1-min.png);
 }
 
 .headerRegistro{
@@ -721,85 +721,91 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 
 /* Página Contáctame.html*/
 
+.bodyContacto{
+    background-color: #e9c6d2;
+    display: grid;
+    grid-template-columns: 1fr   1fr;
+    grid-template-rows: 80px   1fr  1fr 80px;
+    grid-template-areas: "nav    nav"
+                         "aside  header"
+                         "aside  main"
+                         "footer  footer"; 
+}
+
+.asideContacto{
+    grid-area: aside;
+}
+
+.asideContacto img{
+    width: 100%;
+    height: 100%;
+}
+
+.headerContacto{
+    grid-area: header;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .tituloAsesoria{
     font-family: cursive;
     font-size: 35px;
-    color:#d40c0c;
-    position: absolute;
-    width: 600px;
-    height: 50px;
-    top: 120px;
-    left: 580px;
+    color: #8f113c;
     text-align: center;
 }
 
 .textoAsesoria{
     font-family: calibri;
     font-size: 18px;
-    background-color: #f3d4d4;
-    border-radius: 10px;
-    width: 550px;
-    height: 130px;
+    background-color: #e6e1e1;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
     padding: 15px;
-    position: absolute;
-    left: 600px;
-    top: 240px
+}
+
+.mainContacto{
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .tituloContacto{
     font-family: cursive;
     font-size: 40px;
-    color:#fa1143;
-    position: absolute;
-    width: 550px;
-    height: 100px;
-    top: 400px;
-    left: 700px;
+    color:#8f133c;
 }
 
 .redes{
-    background-color: #faf4c4;
-    width: 550px;
+    background-color:#e6e1e1;
+    width: 350px;
     height: 100px;
     border-color: #070707;
     border-radius: 10px;
-    position: absolute;
-    top: 460px;
-    display:flex
-    justify-content space-between;
+    display:flex;
+    justify-content: center;
     align-items :center;
+    padding: 10px;
+    margin: 30px;
 }
 
 .redes__Ig{
-
-    position: absolute;
-    padding: 20px;
-    width: 100px;
-    height: 100px;
-    left: 50px;
-    display: flex;
+    padding-right: 30px;
 }
-
 .redes__Fb{
-    position: absolute;
-    padding: 20px;
-    width: 100px;
-    height: 100px;
-    left: 230px;
-    display:flex;
+    padding: 0px 30px;
 }
-
 .redes__Reg{
-    position: absolute;
-    padding: 20px;
-    width: 100px;
-    height: 100px;
-    left: 300px;
-    left: 400px;
-    display: flex;
+    padding-left: 30px;
 }
-
-
 
 
 @media(max-width:1000px){
