@@ -47,7 +47,6 @@ nav ul{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
 }
 
 nav ul li{
@@ -204,7 +203,7 @@ nav ul li:hover{
     grid-area: footer;
     background-color: #8f113c;
     display: flex;
-    padding: 20px;
+    padding: 5px;
     justify-content:space-around;
     flex-wrap:nowrap;
     flex-direction: row;
@@ -490,8 +489,7 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 /* pagina Registrate.html*/
 
 .bodyResgistro{
-    background-color: #fff;
-
+    background-color: #fceae9;
 }
 
 .headerRegistro{
@@ -517,6 +515,7 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 }
 
 .mainRegistro{
+   
     width: 100%;
     height: 380px;
     display: flex;
@@ -531,6 +530,7 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
 }
 
 .mainRegistro div form div{
@@ -581,75 +581,37 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
     border-radius: 8px;
 }
 
+
 /* Página SobreMi.html*/
 
-.bodyBio{
-    background-image: url(../img/FONDO\ SITIO\ WEB.png);
-    display: grid;
-    grid-template-columns: 1fr   1fr;
-    grid-template-rows: 70px  1/2fr  1fr  80px;
-    grid-template-areas: "nav    nav"
-                        "header  header"
-                        "aside   main"
-                        "footer  footer"
-}
-
-.headerBio{
-    grid-area: header;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.headerBio div h1{
-    margin: 30px;
-}
-
-.asideBio{
-    grid-area: aside;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.asideBio__img{
-    width: 450px;
-    height: 450px;
-    margin: 30px;
-}
-
-.mainBio{
-    grid-area: main;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.aside__img{
+    position: absolute;
+    right: 950px;
+    top: 0;
 }
 
 .texto{
     font-family: cursive;
     font-size: 20px;
     color:#000;
-    background-color: #fdebf2;
+    background-color: #fafcea;
     border-radius: 15px;
-    width: 450px;
-    height: 400px;
-    padding: 20px;
-    text-align: center;
-    margin: 50px;
-
+    position:absolute;
+    width: 550px;
+    height: 350px;
+    top: 200px;
+    left: 600px;
+    right: 50px;
+    padding: 25px;
 }
 
 .imgContacto{
     background-color:#c24545;
     width: 500px;
     height: 500px;
-    
+    position: absolute;
+    right: 950px;
+    top: 0px;
 }
 
 
@@ -798,40 +760,34 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
     }
 }
 
+@media(max-width:800px){
+    .section{
+        height: 150px;
+    }
+}
+
 @media(max-width:770px){
 
-    .mainRegistro div .form{
+    .mainRegistro{
         width: 100%;
         height: 400px;
+    }
+
+    .form{
         display: flex;
+        flex-direction: column;
+        margin: 30px 20px;
+    }
+
+    .form div{
+        display:flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-    .mainRegistro div form div{
-        flex-direction: column;
-        margin-left: 50px;
-        margin-bottom: 20px;
-    }
-
-    .correo{
-        width: 350px;
-    }
-
-    .mensaje{
-        width: 350px;
-        height: 100px;
-    }
-
-    .enviar{
-        width: 350px;
-        margin-bottom: 0px;
-    }
-
-    .button{
-        margin-bottom: 50px;
-    }
 }
+
+
 
 
 @media(max-width:580px){
