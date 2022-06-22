@@ -12,9 +12,10 @@ body{
 .bodyIndex{
     display: grid;
     grid-template-columns: 1fr  1fr;
-    grid-template-rows: 70px  1fr  1fr  80px;
+    grid-template-rows: 80px  600px  100px 1fr  80px;
     grid-template-areas:"nav     nav"
                         "header  header"
+                        "section   section"
                         "main    aside"
                         "footer  footer";
 }
@@ -30,7 +31,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: linear-gradient(to right,#c27979, #fcd2d2);
+    background-image: linear-gradient(to right,#8f133c, #fcd2d2);
 }
 
 .navbar{
@@ -57,15 +58,15 @@ nav navbar__logo{
 }
 
 .navbar__logo{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     left: 20px;
     top: 20px;
 
 }
 .navbar__nombre{
     font-family:sans-serif;
-    color: #eecbcb;
+    color: #f7f4f4;
     font-size: 20px;
     padding-left: 10px;
 }
@@ -74,12 +75,12 @@ nav ul li a{
     text-decoration: none;
     font-size: 20px;
     font-family: sans-serif;
-    color: #5c232b;
+    color: #331317;
     cursor:pointer;
 }
 
 nav ul li:hover{
-    background-color:#fcf6f6 ;
+    background-color:#f8dae4 ;
     border-radius: 5px;
 }
 
@@ -103,7 +104,7 @@ nav ul li:hover{
 .headerIndex__div h1{
     font-size: 90px;
     font-family: cursive;
-    color:#c24545;
+    color:#c52258;
     margin-top: 50px;
 }
 
@@ -118,6 +119,37 @@ nav ul li:hover{
     color:rgb(75, 9, 9);
     text-align: center;
     padding: 30px 80px;
+}
+
+
+.section{
+    grid-area: section;
+    width: 100%;
+    height: 100%;
+    background-color: #c7abb6;
+
+}
+
+.section div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    font-family: cursive;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.section div a{
+    text-decoration: none;
+    text-align: center;
+    background-color:#e6e2e2;
+    padding: 10px;
+    border: 1px #e6e2e2;
+    border-radius: 30px;
+    margin: 20px
 }
 
 .mainIndex{
@@ -169,16 +201,19 @@ nav ul li:hover{
 
 .footer{
     grid-area: footer;
-    background-color: #c58a8a;
+    background-color: #8f113c;
     display: flex;
     padding: 20px;
     justify-content:space-around;
+    flex-wrap:nowrap;
+    flex-direction: row;
     width: 100%;
     margin-bottom: 0;
 }
 
 .footer__copy{
     font-size: 15px;
+    color: rgb(243, 198, 198);
     padding: 10px;
 }
 
@@ -196,8 +231,6 @@ nav ul li:hover{
     padding: 5px;
     text-align: center;
     align-items: center;
-    
-    
 }
 
 /*Página Blog.html*/
@@ -212,7 +245,7 @@ h1{
 .bodyBlog{
     display: grid;
     grid-template-columns: 1fr  1fr;
-    grid-template-rows: 70px  1fr  1fr  80px;
+    grid-template-rows: 80px  1fr  1fr  80px;
     grid-template-areas:  "nav             nav"
                           "headerblog     headerblog"
                           "tarjetasBlog   tarjetasRecursos"
@@ -673,12 +706,19 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
         width: 100%;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 150px  1fr  1fr  1fr  80px;
+        grid-template-rows: 150px  1fr 100px 1fr  1fr  80px;
         grid-template-areas:"nav"
                         "header"
+                        "section"
                         "aside"
                         "main"
-                        "footer";
+                        "footer";                
+    }
+
+    .bodyIndex .section{
+        grid-area: section;
+        width: 100%;
+        height: 100%;
     }
 
 
