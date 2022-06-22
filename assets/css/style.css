@@ -30,6 +30,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-image: linear-gradient(to right,#c27979, #fcd2d2);
 }
 
 .navbar{
@@ -104,6 +105,11 @@ nav ul li:hover{
     font-family: cursive;
     color:#c24545;
     margin-top: 50px;
+}
+
+.headerIndex__div h1:hover{
+    transition: 2s;
+    transform: scale(1.5);
 }
 
 .headerIndex__div p{
@@ -248,6 +254,8 @@ h1{
     border-radius: 8px;
     display: flex;
     justify-content: center;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 }
 
 
@@ -294,6 +302,8 @@ h1{
     height: 160px;
     border-radius: 8px;
     display: flex;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 }
 
 .blog__2 div{
@@ -351,6 +361,8 @@ h1{
     height: 160px;
     border-radius: 8px;
     display: flex;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 }
 
 .blog__p div{
@@ -396,6 +408,8 @@ h1{
     height: 160px;
     border-radius: 8px;
     display: flex;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 }
 
 .blog__rec div{
