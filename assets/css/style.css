@@ -9,21 +9,11 @@ body{
     font-family: calibri;
 }
 
-.bodyIndex{
-    display: grid;
-    grid-template-columns: 1fr  1fr;
-    grid-template-rows: 80px  600px  100px 1fr  80px;
-    grid-template-areas:"nav     nav"
-                        "header  header"
-                        "section   section"
-                        "main    aside"
-                        "footer  footer";
-}
 
 
 nav{
-    grid-area: nav;
     width: 100%;
+    height: 80px;
     margin: 0;
     background-color: #c27979;
     background-image: linear-gradient(to right,#8f133c, #fcd2d2);
@@ -51,7 +41,7 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     font-family: sans-serif;
     color: #331317;
     cursor:pointer;
@@ -63,26 +53,24 @@ nav ul li:hover{
 }
 
 .headerIndex{
-    grid-area: header;
     width: 100%;
+    height: 650px;
+    
 }
 
 .headerIndex__div{
     background-image: url(../img/FONDO\ SITIO\ WEB.png);
-    width: 100%;
-    height: 100%;
     background-size: cover;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 
+
 .headerIndex__div h1{
-    font-size: 90px;
-    font-family: cursive;
     color:#c52258;
+    height: 200px;
+    text-align: center;
     margin-top: 50px;
 }
 
@@ -96,38 +84,37 @@ nav ul li:hover{
     font-size: 30px;
     color:rgb(75, 9, 9);
     text-align: center;
-    padding: 30px 80px;
+    padding: 30px;
 }
 
 
 .section{
-    grid-area: section;
-    width: 100%;
-    height: 100%;
+    padding: 10px;
+    height: auto;
     background-color: #c7abb6;
-
-}
-
-.section div{
     display: flex;
-    width: 100%;
-    height: 100%;
-    font-family: cursive;
-    font-size: 20px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 30px;
 }
 
-.section div a{
+.section p{
+    font-family: calibri;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.section a{
     text-decoration: none;
     text-align: center;
     background-color:#e6e2e2;
     padding: 10px;
-    border: 1px #e6e2e2;
     border-radius: 30px;
-    margin: 20px
+    margin: 10px;
+    font-family: calibri;
+    color:#570606;
+    width: 200px;
+    font-size: 20px;
 }
 
 .mainIndex{
@@ -162,15 +149,9 @@ nav ul li:hover{
     font-family: calibri;
     font-size: 28px;
     padding-top: 10px;
+    margin-bottom: 20px;
 }
 
-.asideIndex{
-    grid-area: aside;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-    
 .foto__img{
     width: 100%;
     height: 100%;
@@ -183,6 +164,7 @@ nav ul li:hover{
     display: flex;
     padding: 5px;
     justify-content:space-around;
+    align-items: center;
     flex-wrap:nowrap;
     flex-direction: row;
     width: 100%;
@@ -195,27 +177,28 @@ nav ul li:hover{
     padding: 10px;
 }
 
+.footer a{
+    display: flex;
+    align-items: center;
+
+}
+
 .footer__logoIg{
     width: 80px;
     height: 80px;
     padding: 5px;
-    align-items: center;
-    text-align: center;
 }
 
 .footer__logoFb{
     width: 80px;
     height: 78px;
     padding: 5px;
-    text-align: center;
-    align-items: center;
+    
 }
 
 /*Página Blog.html*/
 
 h1{
-    font-family: cursive;
-    font-size: 50px;
     color:#c24545;
 }
 
@@ -788,26 +771,6 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 
 @media(max-width:1000px){
 
-    .bodyIndex{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 80px  1fr 1/4fr 1fr  1fr  80px;
-        grid-template-areas:"nav"
-                        "header"
-                        "section"
-                        "aside"
-                        "main"
-                        "footer";                
-    }
-
-    .bodyIndex .section{
-        grid-area: section;
-        width: 100%;
-        height: 100%;
-    }
-
-
     .bodyBlog{
         width: 100%;
         display: grid;
@@ -830,11 +793,6 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
     }
 }
 
-@media(max-width:800px){
-    .section{
-        height: 150px;
-    }
-}
 
 @media(max-width:770px){
 
@@ -862,43 +820,11 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 
 @media(max-width:580px){
 
-    .bodyIndex{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 200px  1fr  3/4fr  1fr  150px;
-        grid-template-areas:"nav"
-                        "header"
-                        "aside"
-                        "main"
-                        "footer";
-    }
-
-    nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    nav .navbar{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    nav .navbar ul li{
-        font-size:small;
-    }
-
-
 
     .headerIndex__div h1{
         width: 70%;
         font-size: 70px;
         text-align: center;
-    
     }
     
 
