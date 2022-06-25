@@ -180,7 +180,6 @@ nav ul li:hover{
 .footer a{
     display: flex;
     align-items: center;
-
 }
 
 .footer__logoIg{
@@ -193,7 +192,6 @@ nav ul li:hover{
     width: 80px;
     height: 78px;
     padding: 5px;
-    
 }
 
 /*Página Blog.html*/
