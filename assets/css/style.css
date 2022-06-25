@@ -20,9 +20,9 @@ nav{
 
 
 .navbar__logo{
-    width: 60px;
-    height: 60px;
-    padding-left: 10px;
+    width: 50px;
+    height: 50px;
+   
 }
 .navbar__nombre{
     font-family:sans-serif;
@@ -63,6 +63,7 @@ h1{
     color:#c52258;
     height: 200px;
     text-align: center;
+    justify-items: center;
 }
 
 h1:hover{
@@ -291,7 +292,17 @@ box-shadow: 0px 10px 13px -7px #000000, 0px 23px 9px -5px rgba(0,0,0,0.27);
 
 }
 
-.headerRegistro h1{
+.headerRegistro div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.headerRegistro div{
+}
+.headerRegistro div p{
+    margin-inline: auto;
     text-align: center;
 }
 
