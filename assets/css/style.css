@@ -82,17 +82,49 @@ h1:hover{
 .section{
     padding: 10px;
     height: auto;
-    background-image: linear-gradient(to right,#fcd2d2 , #8f133c);
+    width: 60%;
+    background-color: #8f133c;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-inline: auto;
+    animation-name: trasladarse;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes trasladarse{
+    0%{
+        transform: translate(0px,0px);
+    }
+
+
+    25%{
+        transform: translate(200px,0px);
+        background-image: linear-gradient(to right, #fcd2d2 , #8f133c);
+    }
+
+    50%{
+        transform: translate(0px,0px)
+    }
+
+    75%{
+        transform: translate(-200px,0px);
+        background-image: linear-gradient(to right, #8f133c , #fcd2d2);
+    }
+    100%{
+        transform: translate(0px,0px)
+        
+    }
 }
 
 .section p{
     font-family: calibri;
-    font-size: 20px;
-    padding: 15px;
+    font-size: 28px;
+    color: whitesmoke;
+    padding: 10px;
     text-align: center;
+    align-items: center;
 }
 
 .section a{
@@ -101,7 +133,8 @@ h1:hover{
     background-color:#e6e2e2;
     padding: 10px;
     border-radius: 30px;
-    margin: 10px;
+    margin: 5px;
+    margin-inline: 15px;
     font-family: calibri;
     color:#570606;
     width: 200px;
